@@ -6,3 +6,8 @@
         <Button to="/detail/d">D</Button>
     </div>
 </template>
+
+<script setup>
+const f = () => fetch("http://192.168.68.53:4000/api/change?selection=E", {method: 'POST', mode: 'no-cors'})
+f()
+</script>
