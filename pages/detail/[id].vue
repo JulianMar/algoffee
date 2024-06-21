@@ -42,7 +42,7 @@ const name = computed(() => {
     return names[id]
 })
 
-const f = () => fetch("http://192.168.68.59:4000/api/change?selection=" + id.toUpperCase(), { method: 'POST', mode: 'no-cors'})
+const f = () => fetch("https://192.168.68.59:4000/api/change?selection=" + id.toUpperCase(), { method: 'POST', mode: 'no-cors'})
 f()
 
 
